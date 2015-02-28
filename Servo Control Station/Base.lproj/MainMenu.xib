@@ -14,6 +14,7 @@
         <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Servo_Control_Station" customModuleProvider="target">
             <connections>
                 <outlet property="label" destination="bh5-aV-Eil" id="ATv-vu-Q5C"/>
+                <outlet property="slider" destination="GQT-e0-tre" id="iw6-x5-XFk"/>
                 <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>
@@ -113,14 +114,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-e0-tre">
+                    <slider toolTip="Servo Motor Slide Control" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GQT-e0-tre">
                         <rect key="frame" x="18" y="166" width="444" height="26"/>
                         <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="180" tickMarkPosition="above" numberOfTickMarks="19" sliderType="linear" id="dyB-UD-5dZ"/>
                         <connections>
                             <action selector="ValueChanged:" target="Voe-Tx-rLC" id="yfh-vg-AB6"/>
                         </connections>
                     </slider>
-                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-aV-Eil">
+                    <textField toolTip="Servo Motor Value" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bh5-aV-Eil">
                         <rect key="frame" x="204" y="200" width="72" height="17"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="68" id="mGr-Jj-SkN"/>
@@ -131,14 +132,26 @@
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
+                    <button toolTip="Change if Motor Changes While Dragging or After" translatesAutoresizingMaskIntoConstraints="NO" id="0p6-f0-lNa">
+                        <rect key="frame" x="18" y="136" width="157" height="18"/>
+                        <buttonCell key="cell" type="check" title="Continuous Feedback" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="jCg-7l-lah">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="feedBackChanged:" target="Voe-Tx-rLC" id="rkk-f3-CoO"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="GQT-e0-tre" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="2mL-wW-uXI"/>
                     <constraint firstAttribute="centerX" secondItem="GQT-e0-tre" secondAttribute="centerX" id="Gf4-h7-qvA"/>
                     <constraint firstAttribute="centerX" secondItem="bh5-aV-Eil" secondAttribute="centerX" id="OM0-9C-A77"/>
                     <constraint firstAttribute="trailing" secondItem="GQT-e0-tre" secondAttribute="trailing" constant="20" id="SLn-1L-HcY"/>
+                    <constraint firstItem="0p6-f0-lNa" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" constant="20" id="cyB-5V-skW"/>
                     <constraint firstAttribute="centerY" secondItem="GQT-e0-tre" secondAttribute="centerY" id="drO-aL-hwv"/>
                     <constraint firstAttribute="centerX" secondItem="bh5-aV-Eil" secondAttribute="centerX" id="grP-JH-Xe5"/>
+                    <constraint firstItem="0p6-f0-lNa" firstAttribute="top" secondItem="GQT-e0-tre" secondAttribute="bottom" constant="16" id="hC9-OE-9Gl"/>
                     <constraint firstAttribute="centerX" secondItem="GQT-e0-tre" secondAttribute="centerX" id="hf6-cQ-Pkq"/>
                     <constraint firstItem="GQT-e0-tre" firstAttribute="top" secondItem="bh5-aV-Eil" secondAttribute="bottom" constant="8" id="yWU-MO-WQ1"/>
                     <constraint firstItem="GQT-e0-tre" firstAttribute="top" secondItem="bh5-aV-Eil" secondAttribute="bottom" constant="8" id="ycI-Ky-IQK"/>

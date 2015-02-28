@@ -14,6 +14,10 @@ import CoreFoundation
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
+    @IBOutlet weak var slider: NSSlider!
+    @IBAction func feedBackChanged(sender: NSButton) {
+        slider.continuous = !slider.continuous
+    }
     let URLString = "arduino.local"
     let port = 8888
     var socket: GCDAsyncUdpSocket?
