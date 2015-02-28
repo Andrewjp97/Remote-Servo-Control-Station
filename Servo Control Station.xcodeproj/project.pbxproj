@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE249F5A1AA213CB00E7293C /* Viewww.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE249F591AA213CB00E7293C /* Viewww.swift */; };
+		AE249F5C1AA2140800E7293C /* WindowCont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE249F5B1AA2140800E7293C /* WindowCont.swift */; };
+		AE249F5E1AA21C0100E7293C /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE249F5D1AA21C0100E7293C /* CoreFoundation.framework */; };
+		AE249F601AA21CF400E7293C /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE249F5F1AA21CF400E7293C /* CoreServices.framework */; };
+		AE249F671AA21EFC00E7293C /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE249F641AA21EFC00E7293C /* GCDAsyncSocket.m */; };
+		AE249F751AA222C200E7293C /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = AE249F731AA222C200E7293C /* GCDAsyncUdpSocket.h */; };
+		AE249F761AA222C200E7293C /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AE249F741AA222C200E7293C /* GCDAsyncUdpSocket.m */; };
+		AEC27AA61AA24A70008F12FE /* sketch_feb24a.ino in Resources */ = {isa = PBXBuildFile; fileRef = AEC27AA51AA24A70008F12FE /* sketch_feb24a.ino */; };
 		AED6ED461AA20F760056B436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED6ED451AA20F760056B436 /* AppDelegate.swift */; };
 		AED6ED481AA20F760056B436 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AED6ED471AA20F760056B436 /* Images.xcassets */; };
 		AED6ED4B1AA20F760056B436 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AED6ED491AA20F760056B436 /* MainMenu.xib */; };
@@ -24,6 +32,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AE249F591AA213CB00E7293C /* Viewww.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viewww.swift; sourceTree = "<group>"; };
+		AE249F5B1AA2140800E7293C /* WindowCont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowCont.swift; sourceTree = "<group>"; };
+		AE249F5D1AA21C0100E7293C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		AE249F5F1AA21CF400E7293C /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		AE249F631AA21EFC00E7293C /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		AE249F641AA21EFC00E7293C /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		AE249F701AA21FF700E7293C /* Bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		AE249F731AA222C200E7293C /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		AE249F741AA222C200E7293C /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		AEC27AA51AA24A70008F12FE /* sketch_feb24a.ino */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sketch_feb24a.ino; sourceTree = "<group>"; };
 		AED6ED401AA20F760056B436 /* Servo Control Station.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Servo Control Station.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AED6ED441AA20F760056B436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AED6ED451AA20F760056B436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE249F601AA21CF400E7293C /* CoreServices.framework in Frameworks */,
+				AE249F5E1AA21C0100E7293C /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +75,9 @@
 		AED6ED371AA20F760056B436 = {
 			isa = PBXGroup;
 			children = (
+				AEC27AA51AA24A70008F12FE /* sketch_feb24a.ino */,
+				AE249F5F1AA21CF400E7293C /* CoreServices.framework */,
+				AE249F5D1AA21C0100E7293C /* CoreFoundation.framework */,
 				AED6ED421AA20F760056B436 /* Servo Control Station */,
 				AED6ED531AA20F760056B436 /* Servo Control StationTests */,
 				AED6ED411AA20F760056B436 /* Products */,
@@ -74,8 +97,15 @@
 			isa = PBXGroup;
 			children = (
 				AED6ED451AA20F760056B436 /* AppDelegate.swift */,
+				AE249F731AA222C200E7293C /* GCDAsyncUdpSocket.h */,
+				AE249F741AA222C200E7293C /* GCDAsyncUdpSocket.m */,
+				AE249F631AA21EFC00E7293C /* GCDAsyncSocket.h */,
+				AE249F641AA21EFC00E7293C /* GCDAsyncSocket.m */,
 				AED6ED471AA20F760056B436 /* Images.xcassets */,
 				AED6ED491AA20F760056B436 /* MainMenu.xib */,
+				AE249F5B1AA2140800E7293C /* WindowCont.swift */,
+				AE249F591AA213CB00E7293C /* Viewww.swift */,
+				AE249F701AA21FF700E7293C /* Bridge.h */,
 				AED6ED431AA20F760056B436 /* Supporting Files */,
 			);
 			path = "Servo Control Station";
@@ -108,6 +138,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		AE249F711AA221E700E7293C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE249F751AA222C200E7293C /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		AED6ED3F1AA20F760056B436 /* Servo Control Station */ = {
 			isa = PBXNativeTarget;
@@ -116,6 +157,7 @@
 				AED6ED3C1AA20F760056B436 /* Sources */,
 				AED6ED3D1AA20F760056B436 /* Frameworks */,
 				AED6ED3E1AA20F760056B436 /* Resources */,
+				AE249F711AA221E700E7293C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -186,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEC27AA61AA24A70008F12FE /* sketch_feb24a.ino in Resources */,
 				AED6ED481AA20F760056B436 /* Images.xcassets in Resources */,
 				AED6ED4B1AA20F760056B436 /* MainMenu.xib in Resources */,
 			);
@@ -205,6 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE249F671AA21EFC00E7293C /* GCDAsyncSocket.m in Sources */,
+				AE249F761AA222C200E7293C /* GCDAsyncUdpSocket.m in Sources */,
+				AE249F5A1AA213CB00E7293C /* Viewww.swift in Sources */,
+				AE249F5C1AA2140800E7293C /* WindowCont.swift in Sources */,
 				AED6ED461AA20F760056B436 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +370,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Servo Control Station/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system/introspection",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrewpaterson/Desktop/Servo Control Station/Servo Control Station/Bridge.h";
 			};
 			name = Debug;
 		};
@@ -334,7 +386,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Servo Control Station/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system/introspection",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/andrewpaterson/Desktop/Servo Control Station/Servo Control Station/Bridge.h";
 			};
 			name = Release;
 		};
@@ -393,6 +450,7 @@
 				AED6ED5C1AA20F760056B436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AED6ED5D1AA20F760056B436 /* Build configuration list for PBXNativeTarget "Servo Control StationTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +459,7 @@
 				AED6ED5F1AA20F760056B436 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
